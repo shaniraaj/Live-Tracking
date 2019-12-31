@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0D862E0FEAD1A86265CD32 /* libPods-CelisticDataAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F4CB277781D09A63D12A32 /* libPods-CelisticDataAssignment.a */; };
+		33EB6D7959C241304E3DFCCA /* libPods-CelisticDataAssignmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81AAE090B89D6E3369EE1211 /* libPods-CelisticDataAssignmentTests.a */; };
+		682BBA4322DC4717000B4639 /* mapstogpx20190715_053030.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 682BBA4222DC4717000B4639 /* mapstogpx20190715_053030.gpx */; };
+		682BBA4722DC4782000B4639 /* GPSLocationGPXFileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 682BBA4622DC4782000B4639 /* GPSLocationGPXFileParser.m */; };
+		68B9CFAF22DAF8C400CB7F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9CFAE22DAF8C400CB7F1F /* AppDelegate.m */; };
+		68B9CFB222DAF8C400CB7F1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9CFB122DAF8C400CB7F1F /* ViewController.m */; };
+		68B9CFB522DAF8C400CB7F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B9CFB322DAF8C400CB7F1F /* Main.storyboard */; };
+		68B9CFB822DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68B9CFB622DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodeld */; };
+		68B9CFBA22DAF8D800CB7F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B9CFB922DAF8D800CB7F1F /* Assets.xcassets */; };
+		68B9CFBD22DAF8D800CB7F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B9CFBB22DAF8D800CB7F1F /* LaunchScreen.storyboard */; };
+		68B9CFC022DAF8D800CB7F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9CFBF22DAF8D800CB7F1F /* main.m */; };
+		68B9CFCA22DAF8D900CB7F1F /* CelisticDataAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9CFC922DAF8D900CB7F1F /* CelisticDataAssignmentTests.m */; };
+		68B9CFD522DAF8D900CB7F1F /* CelisticDataAssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9CFD422DAF8D900CB7F1F /* CelisticDataAssignmentUITests.m */; };
+		BB95711CAD09212D4D72AC9D /* libPods-CelisticDataAssignmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D517E30C640FFEAEDCDB3E42 /* libPods-CelisticDataAssignmentUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68B9CFC622DAF8D900CB7F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B9CFA222DAF8C400CB7F1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68B9CFA922DAF8C400CB7F1F;
+			remoteInfo = CelisticDataAssignment;
+		};
+		68B9CFD122DAF8D900CB7F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B9CFA222DAF8C400CB7F1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68B9CFA922DAF8C400CB7F1F;
+			remoteInfo = CelisticDataAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FC4C86360E599FAB9DB3CFF /* Pods-CelisticDataAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelisticDataAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelisticDataAssignmentUITests/Pods-CelisticDataAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33D2E1A9B39B37E3B1AA79C7 /* Pods-CelisticDataAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelisticDataAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelisticDataAssignmentTests/Pods-CelisticDataAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		682BBA4222DC4717000B4639 /* mapstogpx20190715_053030.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mapstogpx20190715_053030.gpx; sourceTree = "<group>"; };
+		682BBA4522DC4782000B4639 /* GPSLocationGPXFileParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSLocationGPXFileParser.h; sourceTree = "<group>"; };
+		682BBA4622DC4782000B4639 /* GPSLocationGPXFileParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSLocationGPXFileParser.m; sourceTree = "<group>"; };
+		68B9CFAA22DAF8C400CB7F1F /* CelisticDataAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelisticDataAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B9CFAD22DAF8C400CB7F1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68B9CFAE22DAF8C400CB7F1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68B9CFB022DAF8C400CB7F1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68B9CFB122DAF8C400CB7F1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68B9CFB422DAF8C400CB7F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68B9CFB722DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CelisticDataAssignment.xcdatamodel; sourceTree = "<group>"; };
+		68B9CFB922DAF8D800CB7F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68B9CFBC22DAF8D800CB7F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68B9CFBE22DAF8D800CB7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B9CFBF22DAF8D800CB7F1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68B9CFC522DAF8D900CB7F1F /* CelisticDataAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelisticDataAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B9CFC922DAF8D900CB7F1F /* CelisticDataAssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelisticDataAssignmentTests.m; sourceTree = "<group>"; };
+		68B9CFCB22DAF8D900CB7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68B9CFD022DAF8D900CB7F1F /* CelisticDataAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelisticDataAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B9CFD422DAF8D900CB7F1F /* CelisticDataAssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelisticDataAssignmentUITests.m; sourceTree = "<group>"; };
+		68B9CFD622DAF8D900CB7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F4CB277781D09A63D12A32 /* libPods-CelisticDataAssignment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelisticDataAssignment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AAE090B89D6E3369EE1211 /* libPods-CelisticDataAssignmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelisticDataAssignmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9859D21BC47B28B59C048D7D /* Pods-CelisticDataAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelisticDataAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelisticDataAssignmentTests/Pods-CelisticDataAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98F5B58840C6407583775428 /* Pods-CelisticDataAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelisticDataAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelisticDataAssignment/Pods-CelisticDataAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		A805020BA7503C5882F9D919 /* Pods-CelisticDataAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelisticDataAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelisticDataAssignmentUITests/Pods-CelisticDataAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF925D7009FECC2D0F55B961 /* Pods-CelisticDataAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelisticDataAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelisticDataAssignment/Pods-CelisticDataAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		D517E30C640FFEAEDCDB3E42 /* libPods-CelisticDataAssignmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelisticDataAssignmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B9CFA722DAF8C400CB7F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0D862E0FEAD1A86265CD32 /* libPods-CelisticDataAssignment.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B9CFC222DAF8D900CB7F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EB6D7959C241304E3DFCCA /* libPods-CelisticDataAssignmentTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B9CFCD22DAF8D900CB7F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB95711CAD09212D4D72AC9D /* libPods-CelisticDataAssignmentUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120D117C532D27CD77824565 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF925D7009FECC2D0F55B961 /* Pods-CelisticDataAssignment.debug.xcconfig */,
+				98F5B58840C6407583775428 /* Pods-CelisticDataAssignment.release.xcconfig */,
+				9859D21BC47B28B59C048D7D /* Pods-CelisticDataAssignmentTests.debug.xcconfig */,
+				33D2E1A9B39B37E3B1AA79C7 /* Pods-CelisticDataAssignmentTests.release.xcconfig */,
+				A805020BA7503C5882F9D919 /* Pods-CelisticDataAssignmentUITests.debug.xcconfig */,
+				0FC4C86360E599FAB9DB3CFF /* Pods-CelisticDataAssignmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		61A6397790136A23E1CCB867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80F4CB277781D09A63D12A32 /* libPods-CelisticDataAssignment.a */,
+				81AAE090B89D6E3369EE1211 /* libPods-CelisticDataAssignmentTests.a */,
+				D517E30C640FFEAEDCDB3E42 /* libPods-CelisticDataAssignmentUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		682BBA4422DC4747000B4639 /* XML Parser file for GPS Lat-Long */ = {
+			isa = PBXGroup;
+			children = (
+				682BBA4222DC4717000B4639 /* mapstogpx20190715_053030.gpx */,
+				682BBA4522DC4782000B4639 /* GPSLocationGPXFileParser.h */,
+				682BBA4622DC4782000B4639 /* GPSLocationGPXFileParser.m */,
+			);
+			path = "XML Parser file for GPS Lat-Long";
+			sourceTree = "<group>";
+		};
+		68B9CFA122DAF8C400CB7F1F = {
+			isa = PBXGroup;
+			children = (
+				68B9CFAC22DAF8C400CB7F1F /* CelisticDataAssignment */,
+				68B9CFC822DAF8D900CB7F1F /* CelisticDataAssignmentTests */,
+				68B9CFD322DAF8D900CB7F1F /* CelisticDataAssignmentUITests */,
+				68B9CFAB22DAF8C400CB7F1F /* Products */,
+				120D117C532D27CD77824565 /* Pods */,
+				61A6397790136A23E1CCB867 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68B9CFAB22DAF8C400CB7F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B9CFAA22DAF8C400CB7F1F /* CelisticDataAssignment.app */,
+				68B9CFC522DAF8D900CB7F1F /* CelisticDataAssignmentTests.xctest */,
+				68B9CFD022DAF8D900CB7F1F /* CelisticDataAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B9CFAC22DAF8C400CB7F1F /* CelisticDataAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				682BBA4422DC4747000B4639 /* XML Parser file for GPS Lat-Long */,
+				68B9CFAD22DAF8C400CB7F1F /* AppDelegate.h */,
+				68B9CFAE22DAF8C400CB7F1F /* AppDelegate.m */,
+				68B9CFB022DAF8C400CB7F1F /* ViewController.h */,
+				68B9CFB122DAF8C400CB7F1F /* ViewController.m */,
+				68B9CFB322DAF8C400CB7F1F /* Main.storyboard */,
+				68B9CFB922DAF8D800CB7F1F /* Assets.xcassets */,
+				68B9CFBB22DAF8D800CB7F1F /* LaunchScreen.storyboard */,
+				68B9CFBE22DAF8D800CB7F1F /* Info.plist */,
+				68B9CFBF22DAF8D800CB7F1F /* main.m */,
+				68B9CFB622DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodeld */,
+			);
+			path = CelisticDataAssignment;
+			sourceTree = "<group>";
+		};
+		68B9CFC822DAF8D900CB7F1F /* CelisticDataAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				68B9CFC922DAF8D900CB7F1F /* CelisticDataAssignmentTests.m */,
+				68B9CFCB22DAF8D900CB7F1F /* Info.plist */,
+			);
+			path = CelisticDataAssignmentTests;
+			sourceTree = "<group>";
+		};
+		68B9CFD322DAF8D900CB7F1F /* CelisticDataAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68B9CFD422DAF8D900CB7F1F /* CelisticDataAssignmentUITests.m */,
+				68B9CFD622DAF8D900CB7F1F /* Info.plist */,
+			);
+			path = CelisticDataAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B9CFA922DAF8C400CB7F1F /* CelisticDataAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B9CFD922DAF8D900CB7F1F /* Build configuration list for PBXNativeTarget "CelisticDataAssignment" */;
+			buildPhases = (
+				820213C73B91A5FD25190944 /* [CP] Check Pods Manifest.lock */,
+				68B9CFA622DAF8C400CB7F1F /* Sources */,
+				68B9CFA722DAF8C400CB7F1F /* Frameworks */,
+				68B9CFA822DAF8C400CB7F1F /* Resources */,
+				8E64976F57E50A7B940BFA2E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CelisticDataAssignment;
+			productName = CelisticDataAssignment;
+			productReference = 68B9CFAA22DAF8C400CB7F1F /* CelisticDataAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68B9CFC422DAF8D900CB7F1F /* CelisticDataAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B9CFDC22DAF8D900CB7F1F /* Build configuration list for PBXNativeTarget "CelisticDataAssignmentTests" */;
+			buildPhases = (
+				FB348D80A816B329C51F18C0 /* [CP] Check Pods Manifest.lock */,
+				68B9CFC122DAF8D900CB7F1F /* Sources */,
+				68B9CFC222DAF8D900CB7F1F /* Frameworks */,
+				68B9CFC322DAF8D900CB7F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B9CFC722DAF8D900CB7F1F /* PBXTargetDependency */,
+			);
+			name = CelisticDataAssignmentTests;
+			productName = CelisticDataAssignmentTests;
+			productReference = 68B9CFC522DAF8D900CB7F1F /* CelisticDataAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68B9CFCF22DAF8D900CB7F1F /* CelisticDataAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B9CFDF22DAF8D900CB7F1F /* Build configuration list for PBXNativeTarget "CelisticDataAssignmentUITests" */;
+			buildPhases = (
+				FA068B4B688BD627EFAFB722 /* [CP] Check Pods Manifest.lock */,
+				68B9CFCC22DAF8D900CB7F1F /* Sources */,
+				68B9CFCD22DAF8D900CB7F1F /* Frameworks */,
+				68B9CFCE22DAF8D900CB7F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B9CFD222DAF8D900CB7F1F /* PBXTargetDependency */,
+			);
+			name = CelisticDataAssignmentUITests;
+			productName = CelisticDataAssignmentUITests;
+			productReference = 68B9CFD022DAF8D900CB7F1F /* CelisticDataAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B9CFA222DAF8C400CB7F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Celestic;
+				TargetAttributes = {
+					68B9CFA922DAF8C400CB7F1F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					68B9CFC422DAF8D900CB7F1F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 68B9CFA922DAF8C400CB7F1F;
+					};
+					68B9CFCF22DAF8D900CB7F1F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 68B9CFA922DAF8C400CB7F1F;
+					};
+				};
+			};
+			buildConfigurationList = 68B9CFA522DAF8C400CB7F1F /* Build configuration list for PBXProject "CelisticDataAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68B9CFA122DAF8C400CB7F1F;
+			productRefGroup = 68B9CFAB22DAF8C400CB7F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B9CFA922DAF8C400CB7F1F /* CelisticDataAssignment */,
+				68B9CFC422DAF8D900CB7F1F /* CelisticDataAssignmentTests */,
+				68B9CFCF22DAF8D900CB7F1F /* CelisticDataAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B9CFA822DAF8C400CB7F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B9CFBD22DAF8D800CB7F1F /* LaunchScreen.storyboard in Resources */,
+				68B9CFBA22DAF8D800CB7F1F /* Assets.xcassets in Resources */,
+				68B9CFB522DAF8C400CB7F1F /* Main.storyboard in Resources */,
+				682BBA4322DC4717000B4639 /* mapstogpx20190715_053030.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B9CFC322DAF8D900CB7F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B9CFCE22DAF8D900CB7F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		820213C73B91A5FD25190944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CelisticDataAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E64976F57E50A7B940BFA2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CelisticDataAssignment/Pods-CelisticDataAssignment-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CelisticDataAssignment/Pods-CelisticDataAssignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA068B4B688BD627EFAFB722 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CelisticDataAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB348D80A816B329C51F18C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CelisticDataAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B9CFA622DAF8C400CB7F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B9CFB222DAF8C400CB7F1F /* ViewController.m in Sources */,
+				682BBA4722DC4782000B4639 /* GPSLocationGPXFileParser.m in Sources */,
+				68B9CFAF22DAF8C400CB7F1F /* AppDelegate.m in Sources */,
+				68B9CFC022DAF8D800CB7F1F /* main.m in Sources */,
+				68B9CFB822DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B9CFC122DAF8D900CB7F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B9CFCA22DAF8D900CB7F1F /* CelisticDataAssignmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B9CFCC22DAF8D900CB7F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B9CFD522DAF8D900CB7F1F /* CelisticDataAssignmentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68B9CFC722DAF8D900CB7F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68B9CFA922DAF8C400CB7F1F /* CelisticDataAssignment */;
+			targetProxy = 68B9CFC622DAF8D900CB7F1F /* PBXContainerItemProxy */;
+		};
+		68B9CFD222DAF8D900CB7F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68B9CFA922DAF8C400CB7F1F /* CelisticDataAssignment */;
+			targetProxy = 68B9CFD122DAF8D900CB7F1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68B9CFB322DAF8C400CB7F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B9CFB422DAF8C400CB7F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68B9CFBB22DAF8D800CB7F1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B9CFBC22DAF8D800CB7F1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68B9CFD722DAF8D900CB7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68B9CFD822DAF8D900CB7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B9CFDA22DAF8D900CB7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF925D7009FECC2D0F55B961 /* Pods-CelisticDataAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RV4987X877;
+				INFOPLIST_FILE = CelisticDataAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celestic.CelisticDataAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68B9CFDB22DAF8D900CB7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F5B58840C6407583775428 /* Pods-CelisticDataAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RV4987X877;
+				INFOPLIST_FILE = CelisticDataAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celestic.CelisticDataAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68B9CFDD22DAF8D900CB7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9859D21BC47B28B59C048D7D /* Pods-CelisticDataAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CelisticDataAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celestic.CelisticDataAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelisticDataAssignment.app/CelisticDataAssignment";
+			};
+			name = Debug;
+		};
+		68B9CFDE22DAF8D900CB7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D2E1A9B39B37E3B1AA79C7 /* Pods-CelisticDataAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CelisticDataAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celestic.CelisticDataAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelisticDataAssignment.app/CelisticDataAssignment";
+			};
+			name = Release;
+		};
+		68B9CFE022DAF8D900CB7F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A805020BA7503C5882F9D919 /* Pods-CelisticDataAssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CelisticDataAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celestic.CelisticDataAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CelisticDataAssignment;
+			};
+			name = Debug;
+		};
+		68B9CFE122DAF8D900CB7F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC4C86360E599FAB9DB3CFF /* Pods-CelisticDataAssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CelisticDataAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celestic.CelisticDataAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CelisticDataAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B9CFA522DAF8C400CB7F1F /* Build configuration list for PBXProject "CelisticDataAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B9CFD722DAF8D900CB7F1F /* Debug */,
+				68B9CFD822DAF8D900CB7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B9CFD922DAF8D900CB7F1F /* Build configuration list for PBXNativeTarget "CelisticDataAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B9CFDA22DAF8D900CB7F1F /* Debug */,
+				68B9CFDB22DAF8D900CB7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B9CFDC22DAF8D900CB7F1F /* Build configuration list for PBXNativeTarget "CelisticDataAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B9CFDD22DAF8D900CB7F1F /* Debug */,
+				68B9CFDE22DAF8D900CB7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B9CFDF22DAF8D900CB7F1F /* Build configuration list for PBXNativeTarget "CelisticDataAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B9CFE022DAF8D900CB7F1F /* Debug */,
+				68B9CFE122DAF8D900CB7F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68B9CFB622DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68B9CFB722DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodel */,
+			);
+			currentVersion = 68B9CFB722DAF8C400CB7F1F /* CelisticDataAssignment.xcdatamodel */;
+			path = CelisticDataAssignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 68B9CFA222DAF8C400CB7F1F /* Project object */;
+}

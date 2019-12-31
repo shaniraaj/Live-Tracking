@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SWB-ur-mLJ">
+                                <rect key="frame" x="9.5" y="622" width="356" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlx-SI-LrP">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="45"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startStoringTheLoation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXC-Na-Beg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk5-J4-whx">
+                                        <rect key="frame" x="193" y="0.0" width="163" height="45"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopSharingLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Av8-9j-VPF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XxM-pE-9eo"/>
+                                </constraints>
+                            </stackView>
+                            <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaO-9f-vmh" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="85" width="375" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-AT-Rja">
+                                <rect key="frame" x="0.0" y="30" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WD2-IN-CY5"/>
+                                </constraints>
+                                <state key="normal" title="Plot Polyline From GPX file"/>
+                                <connections>
+                                    <action selector="plotRouteFromGPXFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P52-FU-7cx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GfP-AT-Rja" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6BJ-lw-pRk"/>
+                            <constraint firstItem="SWB-ur-mLJ" firstAttribute="centerX" secondItem="OaO-9f-vmh" secondAttribute="centerX" id="8Ft-r2-zFI"/>
+                            <constraint firstItem="OaO-9f-vmh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ExD-Kh-zpy"/>
+                            <constraint firstItem="OaO-9f-vmh" firstAttribute="top" secondItem="GfP-AT-Rja" secondAttribute="bottom" constant="5" id="Kep-GK-qjr"/>
+                            <constraint firstItem="OaO-9f-vmh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QlG-ku-t4U"/>
+                            <constraint firstItem="SWB-ur-mLJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.95" id="dX4-rR-jTa"/>
+                            <constraint firstItem="GfP-AT-Rja" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e6s-z4-kwI"/>
+                            <constraint firstItem="GfP-AT-Rja" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fhH-RG-a8j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SWB-ur-mLJ" secondAttribute="bottom" id="nS0-V5-fb1"/>
+                            <constraint firstItem="SWB-ur-mLJ" firstAttribute="top" secondItem="OaO-9f-vmh" secondAttribute="bottom" constant="5" id="zcK-aM-VXE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gmsMapView" destination="OaO-9f-vmh" id="b7L-PK-5Sm"/>
+                        <outlet property="plotFromGPXFileOutlet" destination="GfP-AT-Rja" id="pm2-sW-s7U"/>
+                        <outlet property="startButtonOutlet" destination="Zlx-SI-LrP" id="IKc-LX-Vdz"/>
+                        <outlet property="stopButtonOutlet" destination="Pk5-J4-whx" id="Yfa-s5-Yg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>
